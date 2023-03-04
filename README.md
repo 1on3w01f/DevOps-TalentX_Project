@@ -2,12 +2,14 @@
 
 #DevOps
 
-In this project, we have a product called TalentX. 
+In this project, I have a product called TalentX. 
 TalentX is a web Application where employers find and hire the best professional talents in the area of DevOps and 
-Cybersecurity across the globe.
+Cybersecurity across the globe. The goal of this project is to showcase my expertise in the key areas of DevOps and Site Reliability Engineering (SRE).
 
-It is a website written in Java. TalentX consists of multiple services - Nginx, Apache Tomcat, RabbitMQ, MemCached, & MySQL.
-These services will form the website stack. The goal of this project is to showcase my expertise in these areas of DevOps and Site Reliability Engineering (SRE). The website will be deployed and tested across the following platforms.
+TalentX is a business networking website written in Java. TalentX consists of multiple services - NGINX, APACHE TOMCAT, RABBITMQ, MEMCACHED, & MYSQL.
+These services will form the website stack. The NGINX web service will be used as the load balancing in the application and will route users' requests to the APACHE TOMCAT server. The APACHE TOMCAT service is a java web application service that hosts the talentX application. It serves the user a web page to signup or login, and these login details are stored in the MYSQL database service. Also included in the stack is the MEMCACHED service, a database caching service that is connected to the MYSQL service in the stack. This will cache all the requests being returned by the MYSQL database service. Hence, next time the same request comes, it will be accessing the data which is cached in MEMCACHED. The RABBITMQ service is a queuing service to connect applications together in the stack.
+
+ The website will be deployed and tested across the following platforms.
       
 1. Local setup - Using vagrant to create VMs on a local Machine & deploying these services on the VMs using automation
 
