@@ -22,4 +22,3 @@ These services will form the website stack. The NGINX web service will be used a
 4. Kubernetes - the entire project will be deployed on Kubernetes Cluster
 
 
-
