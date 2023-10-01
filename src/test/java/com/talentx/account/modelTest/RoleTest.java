@@ -1,4 +1,4 @@
-ackage com.talentx.account.modelTest;
+package com.talentx.account.modelTest;
 
 import junit.framework.Assert;
 
