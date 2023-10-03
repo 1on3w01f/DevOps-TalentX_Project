@@ -1,24 +1,65 @@
 
+<h1 align="center">PROJECT - Showcasing DevOps and Site Reliability Engineering (SRE)</h1>
 
-The goal of this project is to showcase my expertise in the key areas of DevOps and Site Reliability Engineering (SRE).
+<h2 align="left">PROJECT GOAL</h2>
+Showcase expertise in key DevOps and SRE areas through the deployment of TalentX, a business networking website, on various platforms.
 
-In this project, I have a product called TalentX. 
-TalentX is a web Application where employers find and hire the best professional talents in the area of DevOps and 
-Cybersecurity across the globe. 
+<h2 align="left">BACKGROUND</h2>
+<p>TalentX is a robust business networking website developed in Java, aimed at connecting employers with top talents in the DevOps and Cybersecurity domains worldwide. The project involves deploying TalentX, which comprises multiple services, onto different platforms to demonstrate proficiency in DevOps and SRE practices.</p>
 
+<h2 align="left">WEBSITE STACK</h2>
+<p>The TalentX website stack includes the following services:</p>
+<ul>
+        <li>NGINX:  utilized as a load balancer to distribute user requests to the appropriate servers.</li>
+        <li>APACHE TOMCAT:  hosts the TalentX Java web application, offering user registration and login functionalities.</li>
+        <li>RABBITMQ: provides a queuing service to connect various components within the stack.</li>
+        <li>MEMCACHED: punctions as a database caching service, enhancing the website's performance by caching data from the MYSQL database.</li>
+        <li>MYSQL: stores user data, including login credentials.</li>
+    </ul>
 
-TalentX is a business networking website written in Java. TalentX consists of multiple services - NGINX, APACHE TOMCAT, RABBITMQ, MEMCACHED, & MYSQL.
-These services will form the website stack. The NGINX web service will be used as the load balancing in the application and will route users' requests to the APACHE TOMCAT server. The APACHE TOMCAT service is a java web application service that hosts the talentX application. It serves the user a web page to signup or login, and these login details are stored in the MYSQL database service. Also included in the stack is the MEMCACHED service, a database caching service that is connected to the MYSQL service in the stack. This will cache all the requests being returned by the MYSQL database service. Hence, next time the same request comes, it will be accessing the data which is cached in MEMCACHED. The RABBITMQ service is a queuing service to connect applications together in the stack.
-
-
- The website will be deployed and tested across the following platforms.
+<h2 align="left">DEPLOYMENT PLATFORMS:</h2>
       
-1. Local setup - Using vagrant to create VMs on a local Machine & deploying these services on the VMs using automation
+<p>1. Local setup:</p>
+<ul>
+        <li>Vagrant: Utilized to create virtual machines (VMs) on a local machine.</li>
+        <li>Automation: Deployment of services on VMs automated with tools like Ansible.</li>
+        <li>Jenkins: Integration for continuous integration and continuous deployment (CI/CD) pipelines.</li>    
+</ul>
 
-2. Docker - the entire application set will be deployed and ran on docker containers
+<p>2. Docker:</p>
+<ul>
+        <li>Deployment of the entire application within Docker containers, ensuring portability and ease of scaling.</li>
+        <li>CI/CD pipelines managed by Jenkins.</li> 
+</ul>
 
-3. AWS Cloud - the entire project will be deployed and ran on the AWS cloud platform (PaaS & SaaS)
+<p>3. AWS Cloud:</p>
+<ul>
+        <li>Leveraging AWS (Amazon Web Services) for cloud-based deployment.</li>
+        <li>Services deployed as Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS).</li>
+        <li>Extensive use of Infrastructure-as-Code (IaC) with tools like Terraform.</li>
+        <li>Jenkins orchestrates the deployment process in the cloud.</li>
+</ul>
 
-4. Kubernetes - the entire project will be deployed on Kubernetes Cluster
+<p>4. Kubernetes:</p>
+<ul>
+        <li>Deployment on a Kubernetes cluster for container orchestration.</li>
+        <li>Kubernetes ensures high availability and scalability.</li>
+        <li>CI/CD pipelines managed through Jenkins with Kubernetes integration.</li>    
+</ul>
+
+<h2 align="left">Key Focus Areas:</h2>
+<ul>
+        <li>Infrastructure Automation</li>
+        <li>Containerization and Orchestration</li>
+        <li>CI/CD Pipeline Implementation</li>
+        <li>Cloud Computing (AWS)</li>
+        <li>Kubernetes Orchestration</li>
+        <li>Monitoring and Logging (Prometheus and Grafana)</li>
+        <li>Security Practices (Implementing Security Groups, Role-based Access Control, etc.)</li>
+        <li>Performance Optimization (Caching with Memcached)</li>
+        <li>High Availability (Kubernetes Deployments)</li>
+        <li>Scalability (Docker and Kubernetes)</li>
+</ul>
 
 
+<p>This project aims to demonstrate proficiency in the aforementioned DevOps and SRE areas by successfully deploying TalentX on diverse platforms, emphasizing automation, scalability, and robustness in each environment. Jenkins and Ansible play pivotal roles in ensuring smooth deployment and continuous improvement.</p>
