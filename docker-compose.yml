@@ -1,22 +1,23 @@
 version: '3.8'
 services:
-  vprodb:
-    image: vprocontainers/vprofiledb
+  db01:
     build:
-      context: ./javaapi
+      context: ./Docker-files/db
+    image: securewolf/talentx_db
+    container_name: db01
     ports:
       - "3306:3306"
     volumes:
-      - vprodbdata:/var/lib/mysql
+      - txdbdata:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=vprodbpass
+      - MYSQL_ROOT_PASSWORD=admin123
 
-  vprocache01:
+  mc01:
     image: memcached
     ports:
       - "11211:11211"
 
-  vpromq01:
+  rmq01:
     image: rabbitmq
     ports:
       - "15672:15672"
@@ -24,17 +25,23 @@ services:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
 
-  vproapp:
-    image: vprocontainers/vprofileapp
+  txapp:
+    build:
+      context: ./Docker-files/app/multistage
+    image: securewolf/talentx_app
+    container_name: txapp
     ports:
       - "8080:8080"
     volumes: 
-      - vproappdata:/usr/local/tomcat/webapps
+      - txappdata:/usr/local/tomcat/webapps
 
-  vproweb:
-    image: vprocontainers/vprofileweb
+  web01:
+    build: 
+      context: ./Docker-files/web
+    image: securewolf/talentx_web
+    container_name: web01
     ports:
-      - "80:80"
+      - "80:80"    
 volumes:
-  vprodbdata: {}
-  vproappdata: {}
+  txdbdata: {}
+  txappdata: {}
