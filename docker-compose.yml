@@ -1,23 +1,22 @@
 version: '3.8'
 services:
-  db01:
+  txdb01:
     build:
       context: ./Docker-files/db
     image: securewolf/talentx_db
-    container_name: db01
     ports:
       - "3306:3306"
     volumes:
       - txdbdata:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=admin123
+      - MYSQL_ROOT_PASSWORD=txdbpass
 
-  mc01:
+  txcache01:
     image: memcached
     ports:
       - "11211:11211"
 
-  rmq01:
+  txrmq01:
     image: rabbitmq
     ports:
       - "15672:15672"
@@ -29,17 +28,15 @@ services:
     build:
       context: ./Docker-files/app/multistage
     image: securewolf/talentx_app
-    container_name: txapp
     ports:
       - "8080:8080"
     volumes: 
       - txappdata:/usr/local/tomcat/webapps
 
-  web01:
+  txweb:
     build: 
       context: ./Docker-files/web
     image: securewolf/talentx_web
-    container_name: web01
     ports:
       - "80:80"    
 volumes:

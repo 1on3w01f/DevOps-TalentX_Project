@@ -2,7 +2,7 @@ FROM mysql:8.0.33
 LABEL "Project"="talentx"
 LABEL "Author"="Lukman"
 
-ENV MYSQL_ROOT_PASSWORD="admin123"
+ENV MYSQL_ROOT_PASSWORD="txdbpass"
 ENV MYSQL_DATABASE="accounts"
 
 
