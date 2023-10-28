@@ -3,6 +3,7 @@ services:
   txdb01:
     build:
       context: ./Docker-files/db
+    container_name: txdb01
     image: securewolf/talentx_db
     ports:
       - "3306:3306"
@@ -15,11 +16,13 @@ services:
     image: memcached
     ports:
       - "11211:11211"
+    container_name: txcache01
 
   txrmq01:
     image: rabbitmq
     ports:
       - "15672:15672"
+    container_name: txrmq01
     environment:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
@@ -30,6 +33,7 @@ services:
     image: securewolf/talentx_app
     ports:
       - "8080:8080"
+    container_name: txapp
     volumes: 
       - txappdata:/usr/local/tomcat/webapps
 
@@ -38,7 +42,9 @@ services:
       context: ./Docker-files/web
     image: securewolf/talentx_web
     ports:
-      - "80:80"    
+      - "80:80"
+    container_name: txweb
+
 volumes:
   txdbdata: {}
   txappdata: {}
