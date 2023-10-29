@@ -16,6 +16,14 @@ Showcase expertise in key DevOps and SRE areas through the deployment of TalentX
         <li>MEMCACHED: punctions as a database caching service, enhancing the website's performance by caching data from the MYSQL database.</li>
         <li>MYSQL: stores user data, including login credentials.</li>
     </ul>
+<img width="952" alt="localsetup1" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/7a58a384-b971-4959-9d6f-5f92d4aa9f02">
+
+<img width="952" alt="localsetup2" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/54508244-ce9e-43a4-83ad-0e9f2fdcb064">
+
+<img width="956" alt="localsetup3" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/efb22ea2-5cea-417f-ae59-6cf96f8045bf">
+<img width="952" alt="localsetup4" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/3a3c0e26-dfe1-43e1-b19a-ecfe673c812c">
+<img width="950" alt="localsetup6" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/fd1b4d74-c640-413a-801a-1fc940574906">
+<img width="953" alt="localsetup5" src="https://github.com/1on3w01f/DevOps-TalentX_Project/assets/51785222/62783fe3-28ed-43c7-8468-1a0d3bbdcb5a">
 
 <h2 align="left">DEPLOYMENT PLATFORMS:</h2>
       
