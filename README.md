@@ -1,65 +1,24 @@
+## Prerequisites
+- JDK 1.8 or later
+- Maven 3 or later
+- MySQL 5.6 or later
 
-<h1 align="center">PROJECT - Showcasing DevOps and Site Reliability Engineering (SRE)</h1>
+## Technologies 
+- Spring MVC
+- Spring Security
+- Spring Data JPA
+- Maven
+- JSP
+- MySQL
+## Database
+Here,we used Mysql DB 
+MSQL DB Installation Steps for Linux ubuntu 14.04:
+- $ sudo apt-get update
+- $ sudo apt-get install mysql-server
 
-<h2 align="left">PROJECT GOAL</h2>
-Showcase expertise in key DevOps and SRE areas through the deployment of TalentX, a business networking website, on various platforms.
-
-<h2 align="left">BACKGROUND</h2>
-<p>TalentX is a robust business networking website developed in Java, aimed at connecting employers with top talents in the DevOps and Cybersecurity domains worldwide. The project involves deploying TalentX, which comprises multiple services, onto different platforms to demonstrate proficiency in DevOps and SRE practices.</p>
-
-<h2 align="left">WEBSITE STACK</h2>
-<p>The TalentX website stack includes the following services:</p>
-<ul>
-        <li>NGINX:  utilized as a load balancer to distribute user requests to the appropriate servers.</li>
-        <li>APACHE TOMCAT:  hosts the TalentX Java web application, offering user registration and login functionalities.</li>
-        <li>RABBITMQ: provides a queuing service to connect various components within the stack.</li>
-        <li>MEMCACHED: punctions as a database caching service, enhancing the website's performance by caching data from the MYSQL database.</li>
-        <li>MYSQL: stores user data, including login credentials.</li>
-    </ul>
-
-<h2 align="left">DEPLOYMENT PLATFORMS:</h2>
-      
-<p>1. Local setup:</p>
-<ul>
-        <li>Vagrant: Utilized to create virtual machines (VMs) on a local machine.</li>
-        <li>Automation: Deployment of services on VMs automated with tools like Ansible.</li>
-        <li>Jenkins: Integration for continuous integration and continuous deployment (CI/CD) pipelines.</li>    
-</ul>
-
-<p>2. Docker:</p>
-<ul>
-        <li>Deployment of the entire application within Docker containers, ensuring portability and ease of scaling.</li>
-        <li>CI/CD pipelines managed by Jenkins.</li> 
-</ul>
-
-<p>3. AWS Cloud:</p>
-<ul>
-        <li>Leveraging AWS (Amazon Web Services) for cloud-based deployment.</li>
-        <li>Services deployed as Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS).</li>
-        <li>Extensive use of Infrastructure-as-Code (IaC) with tools like Terraform.</li>
-        <li>Jenkins orchestrates the deployment process in the cloud.</li>
-</ul>
-
-<p>4. Kubernetes:</p>
-<ul>
-        <li>Deployment on a Kubernetes cluster for container orchestration.</li>
-        <li>Kubernetes ensures high availability and scalability.</li>
-        <li>CI/CD pipelines managed through Jenkins with Kubernetes integration.</li>    
-</ul>
-
-<h2 align="left">Key Focus Areas:</h2>
-<ul>
-        <li>Infrastructure Automation</li>
-        <li>Containerization and Orchestration</li>
-        <li>CI/CD Pipeline Implementation</li>
-        <li>Cloud Computing (AWS)</li>
-        <li>Kubernetes Orchestration</li>
-        <li>Monitoring and Logging (Prometheus and Grafana)</li>
-        <li>Security Practices (Implementing Security Groups, Role-based Access Control, etc.)</li>
-        <li>Performance Optimization (Caching with Memcached)</li>
-        <li>High Availability (Kubernetes Deployments)</li>
-        <li>Scalability (Docker and Kubernetes)</li>
-</ul>
+Then look for the file :
+- /src/main/resources/accountsdb
+- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
+- > mysql -u <user_name> -p accounts < accountsdb.sql
 
 
-<p>This project aims to demonstrate proficiency in the aforementioned DevOps and SRE areas by successfully deploying TalentX on diverse platforms, emphasizing automation, scalability, and robustness in each environment. Jenkins and Ansible play pivotal roles in ensuring smooth deployment and continuous improvement.</p>

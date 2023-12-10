@@ -28,8 +28,8 @@
                             <a class="navbar-brand" href="#" style="margin-right:-8px; margin-top:-5px;">
                                 <img alt="Brand" src="${contextPath}/resources/Images/user/logo.png" width="30px" height="30px">
                             </a>
-                            <a class="navbar-brand" href="#">Talent X</a>
-                            <i class="brand_network"><small><small>Talent Network</small></small></i>
+                            <a class="navbar-brand" href="#">VisualPath</a>
+                            <i class="brand_network"><small><small>VP* Network</small></small></i>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
@@ -59,7 +59,7 @@
                                                     <div class="col-md-7">
                                                         <span> ${pageContext.request.userPrincipal.name}</span> <br/>
                                                         <p class="text-muted small">
-                                                            ${pageContext.request.userPrincipal.name}@talentx.com</p>
+                                                            ${pageContext.request.userPrincipal.name}@visualpath.co.in</p>
                                                         <div class="divider">
                                                         </div>
                                                         <a href="${contextPath}/user/${pageContext.request.userPrincipal.name}" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> UpdateProfile </a>
@@ -73,7 +73,7 @@
                                                 <div class="navbar-footer-content">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Password</a>
+                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Passowrd</a>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <a onclick="document.forms['logoutForm'].submit()" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
@@ -101,16 +101,16 @@
                         <div class="media-body">
                             <hr>
                             <h3><strong>Bio</strong></h3>
-                            <p>Skilled IT Professional with 4+ years experience in DevOps/Site Reliability Engineering that involves designing, automating, and optimizing mission critical deployments in AWS, leveraging configuration management, CI/CD, Docker, Kubernetes and DevOps processes.</p>
+                            <p>DevOps For Product Management and Strategy of Application Delivery at VisualPath Technologies. Responsible of providing customers with counsel on their DevOps strategies to help them deliver higher quality software and services to market faster.</p>
                             <hr>
                             <h3><strong>Location</strong></h3>
                             <p>Earth</p>
                             <hr>
                             <h3><strong>Gender</strong></h3>
-                            <p>Male</p>
+                            <p>Unknown</p>
                             <hr>
                             <h3><strong>Birthday</strong></h3>
-                            <p>February 08</p>
+                            <p>January 01 1901</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <span>
-                        <h1 class="panel-title pull-left" style="font-size:30px;">${pageContext.request.userPrincipal.name} &nbsp; <small>${pageContext.request.userPrincipal.name}@talentx.com</small> <i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title=" sharing with you"></i></h1>
+                        <h1 class="panel-title pull-left" style="font-size:30px;">${pageContext.request.userPrincipal.name} &nbsp; <small>${pageContext.request.userPrincipal.name}@visualpath.co.in</small> <i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title=" sharing with you"></i></h1>
                         <div class="dropdown pull-right">
 						
                             <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -138,13 +138,13 @@
                     </span>
                     <br><br>
                     <i class="fa fa-tags" aria-hidden="true"></i> <a href="#" class="tag">#DevOps</a> <a href="#" class="tag"> #Continuous Integration</a> <a href="#" class="tag"> #Continuous Delivery </a><a href="#" class="tag"> #Automation</a>
-                     <c:if test="${pageContext.request.userPrincipal.name =='admin_tx'}">
+                     <c:if test="${pageContext.request.userPrincipal.name =='admin_vp'}">
 					     <a href="${contextPath}/users" class="btn btn-success" >All Users</a>
 					 </c:if>
-					  <c:if test="${pageContext.request.userPrincipal.name =='admin_tx'}">
+					  <c:if test="${pageContext.request.userPrincipal.name =='admin_vp'}">
 					     <a href="${contextPath}/user/rabbit" class="btn btn-success" >RabbitMq</a>
 					 </c:if>
-					 <c:if test="${pageContext.request.userPrincipal.name =='admin_tx'}">
+					 <c:if test="${pageContext.request.userPrincipal.name =='admin_vp'}">
 					     <a href="${contextPath}/user/elasticsearch" class="btn btn-success" >Elasticsearch</a>
 					 </c:if>
                     <br><br><hr>
@@ -191,9 +191,7 @@
                     <hr>
                     <div class="post-content">
                         <p>"The Key to DevOps Success."</p>
-                        <p>DevOps is more than just a buzzword; it's a transformative approach to software development and IT operations. The key to DevOps success lies in its core principles of collaboration, automation, and a relentless focus on delivering value to customers. By breaking down silos between development and operations teams, fostering a culture of shared responsibility, and automating repetitive tasks, organizations can accelerate the software delivery process, increase efficiency, and enhance product quality.
-
-                            But beyond tools and processes, the true essence of DevOps is a mindset. It's about embracing change, continuously learning and improving, and staying agile in a rapidly evolving tech landscape. The key to DevOps success is the people who drive it, their commitment to a common goal, and their ability to adapt and innovate. It's a journey, not a destination, where the destination is a state of perpetual improvement and customer satisfaction.</p>
+                        <p>The Key to DevOps Success" Collaboration". Collaboration is essential to DevOps,yet how to do it is often unclear with many teams falling back on ineffective conference calls, instant messaging, documents, and SharePoint sites. In this keynote,we will share a vision for a next generation DevOps where collaboration, continuous documentation, and knowledge capture are combined with automation toolchains to enable rapid innovation and deployment.</p>
                     </div>
                     <hr>
                     <div>
@@ -256,12 +254,12 @@
                                         <img class="media-object img-circle" src="${contextPath}/resources/Images/user/user2.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                                     </a>
                                 </div>
-                                <h4><a href="#" style="text-decoration:none;"><strong>Jack Mallow</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> about 10 hours ago</i></a></small></small></h4>
+                                <h4><a href="#" style="text-decoration:none;"><strong>Waheed Khan</strong></a> <small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> about 10 hours ago</i></a></small></small></h4>
                                 <hr>
                                 <div class="post-content">
                                      <p>What are DevOps skills?</p>
-                                    <p>Our respondents identified the top skill areas for a DevOps engineer</p>
-                                    <p>1)scripting 2)Process re-engineering 3)Communicating and collaborating with others 4)Extensive knowledge of software build cycles 5)Experience deploying code 6)Experience in software architecture 7)Familiarity with application programming 8)Database management 9)System design.</p>
+                                    <p>Our respondents identified the top three skill areas for DevOps staff:</p>
+                                    <p>1) Coding or scripting 2)Process re-engineering 3)Communicating and collaborating with others Extensive knowledge of software build cycles 4)Experience deploying code 5)Experience in software architecture 6)Familiarity with application programming 7)Database management 8)System design.</p>
 									<p>These skills all point to a growing recognition that software is not written in the old way anymore. Where software used to be written from scratch in a highly complex and lengthy process, creating new products is now often a matter of choosing open source components and stitching them together with code. The complexity of todays software lies less in the authoring, and more in ensuring that the new software will work across a diverse set of operating systems and platforms right away. Likewise, testing and deployment are now done much more frequently. That is, they can be more frequent,if developers communicate early and regularly with the operations team, and if ops people bring their knowledge of the production environment to design of testing and staging environments.</p>                                
                                     <p>Demand for people with DevOps skills is growing rapidly because businesses get great results from DevOps. Organizations using DevOps practices are overwhelmingly high-functioning: They deploy code up to 30 times more frequently than their competitors.</p>
                                 </div>

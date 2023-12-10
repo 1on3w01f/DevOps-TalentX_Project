@@ -12,7 +12,6 @@
         <intercept-url pattern="/welcome" access="hasRole('ROLE_USER')"/>
         <form-login login-page="/login" default-target-url="/welcome" authentication-failure-url="/login?error" username-parameter="username" password-parameter="password"/>
         <logout logout-success-url="/login?logout" />
-	<csrf disabled="true"/>
     </http>
 
     <authentication-manager alias="authenticationManager">
@@ -21,7 +20,7 @@
         </authentication-provider>
     </authentication-manager>
 
-    <beans:bean id="userDetailsServiceImpl" class="com.talentx.account.service.UserDetailsServiceImpl"></beans:bean>
+    <beans:bean id="userDetailsServiceImpl" class="com.visualpathit.account.service.UserDetailsServiceImpl"></beans:bean>
 
     <beans:bean id="encoder"
           class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
