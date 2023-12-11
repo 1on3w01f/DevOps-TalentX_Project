@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vproapp
+  name: txapp
   labels: 
-    app: vproapp
+    app: txapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vproapp
+      app: txapp
   template:
     metadata:
       labels:
-        app: vproapp
+        app: txapp
     spec:
       containers:
-      - name: vproapp
-        image: vprofile/vprofileapp
+      - name: txapp
+        image: {{ .Values.appimage}}
         ports:
-        - name: vproapp-port
+        - name: txapp-port
           containerPort: 8080
       initContainers:
       - name: init-mydb

@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vprodb
+  name: txdb01
 spec:
   ports:
   - port: 3306
-    targetPort: vprodb-port
+    targetPort: txdb01-port
     protocol: TCP
   selector:
-    app: vprodb
+    app: txdb01
   type: ClusterIP
