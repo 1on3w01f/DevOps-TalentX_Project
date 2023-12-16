@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: txdb01
-        image: securewolf/talentx_db
+        image: securewolf/talentx_db:V1
         ports:
         - name: txdb01-port
           containerPort: 3306

@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: txmq01
+  name: txrmq01
   labels:
-    app: txmq01
+    app: txrmq01
 spec:
   selector:
     matchLabels:
-      app: txmq01
+      app: txrmq01
   replicas: 1
   template:
     metadata:
       labels:
-        app: txmq01
+        app: txrmq01
     spec:
       containers:
-      - name: txmq01
+      - name: txrmq01
         image: rabbitmq
         ports:
-        - name: txmq01-port
+        - name: txrmq01-port
           containerPort: 15672
         env: 
          - name: RABBITMQ_DEFAULT_PASS
