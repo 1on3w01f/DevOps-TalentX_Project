@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: txdb01
-        image: securewolf/talentx_db:V1
+        image: securewolf/talentx_db
         ports:
         - name: txdb01-port
           containerPort: 3306
@@ -26,6 +26,7 @@ spec:
              secretKeyRef:
                name: app-secret
                key: db-pass
+
 #        env:
 #         - name: MYSQL_ROOT_PASSWORD
 #           value: "txdbpass"
