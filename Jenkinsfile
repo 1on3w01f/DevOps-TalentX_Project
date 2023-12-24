@@ -78,7 +78,7 @@ pipeline {
 
         stage('Remove Old App Image'){
           steps{
-            sh "docker rmi $registry:V$BUILD_NUMBER"                  }
+            sh "docker rmi $registry:V$BUILD_NUMBER"                  
           }
         }
 
