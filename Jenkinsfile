@@ -54,10 +54,10 @@ pipeline {
                waitForQualityGate abortPipeline: true
             }
 
-            }    
+          }    
         }
 
-        stage('Build App Image'){
+        stage('Build Talentx App Image'){
           steps{
             script {
                 dockerImage = docker.build registry + ":V$BUILD_NUMBER"    
@@ -82,7 +82,7 @@ pipeline {
           }
         }
 
-        stage('App Deployment') {
+        stage('App Deployment on K8s') {
           agent {label 'KOPS'}
             steps {
               sh "helm upgrade --install --force talentx-stack helm/talentxcharts --set appimage=${registry}:V${BUILD_NUMBER} --namespace prod"
