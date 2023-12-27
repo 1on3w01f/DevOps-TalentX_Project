@@ -2,10 +2,10 @@
 <h1 align="center">PROJECT - Showcasing DevOps and Site Reliability Engineering (SRE)</h1>
 
 <h2 align="left">PROJECT GOAL</h2>
-Showcase expertise in key DevOps and SRE areas through the deployment of TalentX, a business networking website, on various platforms.
+Showcase expertise in key DevOps and SRE areas through the deployment of TalentX, a business networking web application.
 
 <h2 align="left">BACKGROUND</h2>
-<p>TalentX is a robust business networking website developed in Java, aimed at connecting employers with top talents in the DevOps and Cybersecurity domains worldwide. The project involves deploying TalentX, which comprises multiple services, onto different platforms to demonstrate proficiency in DevOps and SRE practices.</p>
+<p>TalentX is a robust business networking web application developed in Java, aimed at connecting employers with top talents in the DevOps and Cybersecurity domains worldwide. The project involves deploying TalentX, which comprises multiple services, onto different platforms to demonstrate proficiency in DevOps and SRE practices.</p>
 
 <h2 align="left">WEBSITE STACK</h2>
 <p>The TalentX website stack includes the following services:</p>
