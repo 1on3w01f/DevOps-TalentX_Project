@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: txapp-service
+spec:
+  ports:
+  - port: 80
+    targetPort: txapp-port
+    protocol: TCP
+  selector:
+    app: txapp
+  type: LoadBalancer

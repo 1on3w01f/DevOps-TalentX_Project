@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: txcache01
+  labels:
+    app: txcache01
+spec:
+  selector:
+    matchLabels:
+      app: txcache01
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: txcache01
+    spec:
+      containers:
+      - name: txcache01
+        image: memcached
+        ports:
+        - name: txcache01-port
+          containerPort: 11211

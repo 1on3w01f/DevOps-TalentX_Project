@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: txapp
+  labels: 
+    app: txapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: txapp
+  template:
+    metadata:
+      labels:
+        app: txapp
+    spec:
+      containers:
+      - name: txapp
+        image: {{ .Values.appimage}}
+        ports:
+        - name: txapp-port
+          containerPort: 8080
+      initContainers:
+      - name: init-mydb
+        image: busybox
+        command: ['sh', '-c', 'until nslookup txdb01.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for mydb; sleep 2; done;']
+      - name: init-memcache
+        image: busybox
+        command: ['sh', '-c', 'until nslookup txcache01.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for mydb; sleep 2; done;']
